@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-20T22:31:19 EDT" name="AmazonV1" finished-at="2021-09-20T22:31:53 EDT" duration-ms="33615">
+    <groups>
+    </groups>
+    <test started-at="2021-09-20T22:31:19 EDT" name="AmazonApp1" finished-at="2021-09-20T22:31:30 EDT" duration-ms="11094">
+      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@7e07db1f]" started-at="2021-09-20T22:31:19 EDT" name="setup" finished-at="2021-09-20T22:31:23 EDT" duration-ms="3267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestWithValidData()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@7e07db1f]" started-at="2021-09-20T22:31:23 EDT" name="loginTestWithValidData" finished-at="2021-09-20T22:31:29 EDT" duration-ms="6614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@7e07db1f]" started-at="2021-09-20T22:31:29 EDT" name="tearDown" finished-at="2021-09-20T22:31:30 EDT" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+    </test> <!-- AmazonApp1 -->
+    <test started-at="2021-09-20T22:31:31 EDT" name="AmazonApp2" finished-at="2021-09-20T22:31:42 EDT" duration-ms="10991">
+      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@34a3d150]" started-at="2021-09-20T22:31:31 EDT" name="setup" finished-at="2021-09-20T22:31:33 EDT" duration-ms="2414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestWithValidData()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@34a3d150]" started-at="2021-09-20T22:31:33 EDT" name="loginTestWithValidData" finished-at="2021-09-20T22:31:41 EDT" duration-ms="7812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@34a3d150]" started-at="2021-09-20T22:31:41 EDT" name="tearDown" finished-at="2021-09-20T22:31:42 EDT" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+    </test> <!-- AmazonApp2 -->
+    <test started-at="2021-09-20T22:31:42 EDT" name="AmazonApp3" finished-at="2021-09-20T22:31:53 EDT" duration-ms="11008">
+      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@128d2484]" started-at="2021-09-20T22:31:42 EDT" name="setup" finished-at="2021-09-20T22:31:47 EDT" duration-ms="5433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestWithValidData()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@128d2484]" started-at="2021-09-20T22:31:47 EDT" name="loginTestWithValidData" finished-at="2021-09-20T22:31:51 EDT" duration-ms="4072" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.inetBanking.testCases.TC_LoginTest_001.loginTestWithValidData(TC_LoginTest_001.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@128d2484]" started-at="2021-09-20T22:31:51 EDT" name="tearDown" finished-at="2021-09-20T22:31:53 EDT" duration-ms="1492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+    </test> <!-- AmazonApp3 -->
+  </suite> <!-- AmazonV1 -->
+</testng-results>

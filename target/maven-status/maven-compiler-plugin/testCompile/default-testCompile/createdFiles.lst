@@ -1,0 +1,5 @@
+com\inetBanking\testCases\TC_LoginTest_001.class
+com\inetBanking\utilities\ReadConfig.class
+com\inetBanking\pageObject\LoginPageObjectLocator.class
+com\inetBanking\testCases\BaseClass.class
+com\inetBanking\utilities\Reporting.class

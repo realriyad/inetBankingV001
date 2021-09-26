@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AmazonV1]">
+  <listeners>
+    <listener class-name="com.inetBanking.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="AmazonApp2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTestWithValidData"/>
+        </methods>
+      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- AmazonApp2(failed) -->
+  <test thread-count="5" verbose="0" name="AmazonApp3(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTestWithValidData"/>
+        </methods>
+      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- AmazonApp3(failed) -->
+</suite> <!-- Failed suite [AmazonV1] -->
